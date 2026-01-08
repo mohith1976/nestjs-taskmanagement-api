@@ -1,18 +1,5 @@
 # Docker & Commands Reference - Task Management Project
 
-## Table of Contents
-1. [Project Initialization](#project-initialization)
-2. [Dependency Installation](#dependency-installation)
-3. [Prisma Setup](#prisma-setup)
-4. [Generate NestJS Resources](#generate-nestjs-resources)
-5. [Database Migrations](#database-migrations)
-6. [Docker Commands](#docker-commands)
-7. [Prisma Studio](#prisma-studio)
-8. [Database Queries](#database-queries)
-9. [Workflow Scenarios](#workflow-scenarios)
-10. [Troubleshooting](#troubleshooting)
-
----
 
 ## Project Initialization
 

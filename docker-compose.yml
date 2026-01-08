@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Mohith@2006
+      POSTGRES_DB: taskdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: task-app
+    depends_on:
+      - postgres
+    ports:
+      - "3000:3000"
+      - "127.0.0.1:5555:5555"
+    env_file:
+      - .env
+    command: npm run start:dev
+
+volumes:
+  pgdata:
